@@ -49,7 +49,7 @@ void main() {
 
 
 void funcion (){
-    printf("Jaja, te interrumpo, soy %d \n", getpid());
+    printf("Jaja, te interrumpo, soy %d \n", valorFork);
 }
 
 void noMuere(){
