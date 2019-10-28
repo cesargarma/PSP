@@ -21,10 +21,10 @@ void main() {
     signal(SIGUSR2, beta);
     signal(SIGINT, decrementar);
 
-    printf("mi pid es %d\n", getpid());
+    printf("Mi pid es %d\n", getpid());
 
     while (1) {
-        printf("%s\n", "La red vex se encuentra operativa.");
+        printf("\n%s", "La red vex se encuentra operativa.");
         sleep(1);
     }
 }
