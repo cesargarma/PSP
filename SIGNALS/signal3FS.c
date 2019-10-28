@@ -21,7 +21,7 @@ void main() {
 
 void menu(pid_t pidVex){
     int opcion;
-    printf("Elija una opción: \n1) Enviar señal Alpha \n2) Enviar señal Beta \nopción: ");
+    printf("Elija una opción: \n1) Enviar señal Alpha \n2) Enviar señal Beta \n0) Salir\nopción: ");
     scanf("%d",&opcion);
     switch (opcion) {
         case -1:
@@ -32,6 +32,9 @@ void menu(pid_t pidVex){
             break;
         case 2:
             kill(pidVex, SIGUSR2);
+            break;
+        case 0:
+            exit(1);
             break;
         default:
             printf("Algo no ha funcionado correctamente, saliendo...\n");
